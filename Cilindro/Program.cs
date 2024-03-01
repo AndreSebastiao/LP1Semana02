@@ -14,8 +14,14 @@ namespace Cilindro
             Console.Write("Radius of the Cylinder: ");
             //Read and Transform Radius in to a float
             float r = float.Parse(Console.ReadLine());
-            Console.WriteLine(a);
-            Console.WriteLine(r);
+
+            //Volume equation
+            float v = MathF.PI * MathF.Pow(r,2) * a;
+            //Surface equation
+            float sa = 2 * MathF.PI * r * (r + a);
+
+            Console.WriteLine(v);
+            Console.WriteLine(sa);
         }
     }
 }
