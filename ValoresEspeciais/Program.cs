@@ -18,6 +18,7 @@ namespace ValoresEspeciais
             char    ch;
             double  db;
             float   f;
+            float   f2;
             decimal dc;
 
             //Byte values
@@ -91,6 +92,19 @@ namespace ValoresEspeciais
             Console.WriteLine(dc);
             decimal = decimal.MinValue;
             Console.WriteLine(dc);
+
+            //int overflow
+            ui = uint.MaxValue;
+            Console.WriteLine(ui + 1);
+
+            //double infinite
+            db = 2 * double.MaxValue;
+            Console.WriteLine(db);
+
+            //?
+            f = 100000000.0f;
+            f2 = f1;
+            Console.WriteLine(f2 == f + 0.000000001f);
         }
     }
 }
