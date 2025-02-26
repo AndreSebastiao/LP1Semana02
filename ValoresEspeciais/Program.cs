@@ -6,55 +6,49 @@ namespace ValoresEspeciais
     {
         private static void Main(string[] args)
         {
-            byte    bt;
-            sbyte   sbt;
-            short   sh;
-            ushort  ush;
-            int     i;
-            uint    ui;
-            long    ln;
-            ulong   uln;
-            char    ch;
-            double  db;
-            float   f;
-            float   f2;
-            decimal dc;
+            Console.WriteLine(byte.MaxValue);
+            Console.WriteLine(byte.MinValue);
 
-            Console.WriteLine(bt = byte.MaxValue);
-            Console.WriteLine(bt = byte.MinValue);
+            Console.WriteLine(sbyte.MaxValue);
+            Console.WriteLine(sbyte.MaxValue);
 
-            Console.WriteLine(sbt = sbyte.MaxValue);
-            Console.WriteLine(sbt = sbyte.MaxValue);
+            Console.WriteLine(short.MaxValue);
+            Console.WriteLine(short.MinValue);
 
-            Console.WriteLine(sh = short.MaxValue);
-            Console.WriteLine(sh = short.MinValue);
+            Console.WriteLine(ushort.MaxValue);
+            Console.WriteLine(ushort.MinValue);
 
-            Console.WriteLine(ush = ushort.MaxValue);
-            Console.WriteLine(ush = ushort.MinValue);
+            Console.WriteLine(int.MaxValue);
+            Console.WriteLine(int.MinValue);
 
-            Console.WriteLine(i = int.MaxValue);
-            Console.WriteLine(i = int.MinValue);
+            Console.WriteLine(uint.MaxValue);
+            Console.WriteLine(uint.MinValue);
 
-            Console.WriteLine(ui = uint.MaxValue);
-            Console.WriteLine(ui = uint.MinValue);
+            Console.WriteLine(long.MaxValue);
+            Console.WriteLine(long.MinValue);
 
-            Console.WriteLine(ln = long.MaxValue);
-            Console.WriteLine(ln = long.MinValue);
+            Console.WriteLine(ulong.MaxValue);
+            Console.WriteLine(ulong.MinValue);
 
-            Console.WriteLine(uln = ulong.MaxValue);
-            Console.WriteLine(uln = ulong.MinValue);
+            Console.WriteLine(char.MaxValue);
+            Console.WriteLine(char.MinValue);
 
-            Console.WriteLine(ch = char.MaxValue);
-            Console.WriteLine(ch = char.MinValue);
+            Console.WriteLine(double.MaxValue);
+            Console.WriteLine(double.MinValue);
 
-            Console.WriteLine(db = double.MaxValue);
-            Console.WriteLine(db = double.MinValue);
+            Console.WriteLine(float.MaxValue);
+            Console.WriteLine(float.MinValue);
 
-            Console.WriteLine(f = float.MaxValue);
-            Console.WriteLine(f = float.MinValue);
+            Console.WriteLine(decimal.MaxValue);
+            Console.WriteLine(decimal.MinValue);
 
-            Console.WriteLine(dc = decimal.MaxValue);
-            Console.WriteLine(dc = decimal.MinValue);
+            Console.WriteLine(double.PositiveInfinity);
+            Console.WriteLine(double.NegativeInfinity);
+            Console.WriteLine(double.NaN);
+
+            Console.WriteLine(float.PositiveInfinity);
+            Console.WriteLine(float.NegativeInfinity);
+            Console.WriteLine(float.NaN);
         }
     }
 }
