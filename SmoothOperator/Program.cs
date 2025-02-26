@@ -7,13 +7,13 @@ namespace SmoothOperator
         private static void Main(string[] args)
         {
             Console.Write("Insere número inteiro: ");
-            sbyte i = sbyte.Parse(Console.ReadLine());
+            sbyte n = sbyte.Parse(Console.ReadLine());
 
-            i--;
-            Console.WriteLine(i);
+            n--;
+            Console.WriteLine(n);
 
-            i++;
-            Console.WriteLine(i);
+            n++;
+            Console.WriteLine(n);
         }
     }
 }
