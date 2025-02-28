@@ -8,6 +8,7 @@ namespace ValoresEspeciais
         {
             uint i = uint.MaxValue;
             double x = double.MaxValue;
+            float f1, f2;
 
             Console.WriteLine(byte.MaxValue);
             Console.WriteLine(byte.MinValue);
@@ -57,6 +58,9 @@ namespace ValoresEspeciais
 
             Console.WriteLine(x * 2);
             Console.WriteLine(x + 1);
+
+            f1 = f2 = 10000.0f;
+            Console.WriteLine(f1 == f2 + 0.0001f);
         }
     }
 }
