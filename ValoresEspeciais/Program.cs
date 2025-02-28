@@ -6,6 +6,8 @@ namespace ValoresEspeciais
     {
         private static void Main(string[] args)
         {
+            uint i = uint.MaxValue;
+
             Console.WriteLine(byte.MaxValue);
             Console.WriteLine(byte.MinValue);
 
@@ -49,6 +51,8 @@ namespace ValoresEspeciais
             Console.WriteLine(float.PositiveInfinity);
             Console.WriteLine(float.NegativeInfinity);
             Console.WriteLine(float.NaN);
+
+            Console.WriteLine(i + 1);
         }
     }
 }
