@@ -6,34 +6,34 @@ namespace ChatGPTOne
     {
         private static void Main(string[] args)
         {
-            while (true)
+            string question;
+
+            do
             {
-                Console.Write("Start number: ");
-                int i = int.Parse(Console.ReadLine());
+                Console.Write("Place your question? ");
+                question = Console.ReadLine();
 
-                Console.Write("Step number: ");
-                int j = int.Parse(Console.ReadLine());
-
-                if (i < j)
+                switch (question)
                 {
-                    Console.WriteLine("Start must be higher than step. Try again.");
-                    continue;
+                    case "How are you?":
+                        Console.WriteLine("I'm fine, thank you");
+                        continue;
+                    case "What's your name?":
+                        Console.WriteLine("Gran'pa");
+                        continue;
+                    case "What's your mission?":
+                        Console.WriteLine("Destroy mankind!");
+                        continue;
+                    case "Are you more intelligent than me?":
+                        Console.WriteLine("Obviously!");
+                        continue;
+                    case "EXIT":
+                        break;
+                    default:
+                        Console.WriteLine("You got me, I'm not THAT smart!");
+                        continue;
                 }
-                else if (i % j == 0)
-                {
-                    Console.WriteLine("Start not divisible by step. Try again.");
-                    continue;
-                }
-                else
-                {
-                    do
-                    {
-                        Console.WriteLine(i);
-                    } 
-                    while (i > 0);
-                }
-
-            }
+            } while (question != "EXIT");
         }
     }
 }
